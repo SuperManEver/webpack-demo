@@ -1,4 +1,4 @@
-import _ from "lodash";
+import join from "lodash/join";
 
 import printMe from "./print";
 
@@ -9,7 +9,7 @@ function component() {
   const btn = document.createElement("button");
 
   // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack", "awesomer"], " ");
+  element.innerHTML = join(["Hello", "webpack", "awesomer"], " ");
   element.classList.add("hello");
 
   btn.innerHTML = "Click me and check the console!";

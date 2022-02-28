@@ -16,6 +16,13 @@ module.exports = {
     clean: true,
   },
 
+  optimization: {
+    // runtimeChunk: "single",
+    splitChunks: {
+      chunks: "all",
+    },
+  },
+
   devtool: "inline-source-map",
 
   plugins: [

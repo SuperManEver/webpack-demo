@@ -1,3 +1,3 @@
-import _ from "lodash";
+import join from "lodash/join";
 
-console.log(_.join(["Another", "module", "loaded!"], " "));
+console.log(join(["Another", "module", "loaded!"], " "));
